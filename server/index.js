@@ -8,7 +8,9 @@ dotenv.config();
 import pasteRoutes from "./routes/pastes.routes.js";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+origin: "*",
+}));
 app.use(express.json());
 console.log("REDIS_URL:", process.env.REDIS_URL);
 const redis = new Redis(process.env.REDIS_URL);

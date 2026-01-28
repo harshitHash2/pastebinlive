@@ -25,7 +25,7 @@ export default function Home() {
     setError("");
     setLink("");
 
-    const res = await fetch("http://localhost:5000/api/pastes", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/pastes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

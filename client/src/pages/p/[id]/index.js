@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export async function getServerSideProps({ params }) {
   try {
-    const res = await fetch(`http://localhost:5000/api/pastes/${params.id}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/pastes/${params.id}`);
 
     if (!res.ok) {
       return { props: { paste: null } };
