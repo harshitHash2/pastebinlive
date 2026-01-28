@@ -1,0 +1,19 @@
+{
+  "name": "pastebinbackend",
+  "version": "1.0.0",
+  "description": "this is a backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "nanoid": "^5.1.6"
+  }
+}
