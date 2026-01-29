@@ -37,6 +37,7 @@ Body:
 
 GET /api/pastes/:id
 
+- Response
 {
   id: 'L5m82ocb',
   content: 'sdfgthyt',
